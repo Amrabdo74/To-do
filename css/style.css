@@ -1,0 +1,146 @@
+:root {
+  --padding: 15px;
+  --website-color: #00bcd4;
+  --second-color: #009688;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+.container  {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+      width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      width: 1170px;
+  }
+}
+
+.header h1 {
+  text-align: center;
+  padding: var(--padding) 0;
+}
+
+.header {
+  margin: 10px 0;
+}
+.btn-text,.btn-add  {
+  width: 60%;
+  outline: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000;
+}
+.btn-add {
+  width: 20%;
+  background-color: #00bcd4;
+  cursor: pointer;
+
+}
+.todo-text,
+.todo-line {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-line {
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid ;
+  padding: 10px;
+  border-radius: 20px;
+}
+.node_content {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+.right,.left {
+  margin-right: 25px;
+  cursor: pointer;
+}
+.left {
+  margin-right: 0;
+  margin-left: 25px;
+
+}
+.line-throght {
+  text-decoration: line-through;
+
+}
+.deleteIcon {
+  width: 40px;
+}
+/* ------ dark & light mode-------- */
+
+.dark-shadow {
+  box-shadow: 2px 3px 10px 7px #1f1f39;
+}
+
+.light-shadow {
+  box-shadow: 2px 3px 10px 7px rgb(201 201 201);
+}
+
+.score {
+  font-size: 25px;
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+ul li img {
+  height: 50px;
+  filter: invert(5%) sepia(32%) saturate(4905%) hue-rotate(232deg) brightness(94%) contrast(93%);
+
+}
+
+.thenightbuton {
+  filter: invert(79%) sepia(37%) saturate(7127%) hue-rotate(181deg) brightness(103%) contrast(101%);
+}
+
+.dark {
+  background-color: #161633;
+  color: white;
+  transition: all .75s;
+}
+
+.light {
+  background-color: white;
+  color: black;
+  transition: all .75s;
+}
