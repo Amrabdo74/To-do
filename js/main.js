@@ -81,7 +81,7 @@ todos.forEach((todoItem) => {
 
   var leftTag = document.createElement("div");
   leftTag.classList.add("left");
-  leftTag.innerHTML = "<img class='deleteIcon' src='../images/download.png'/>";
+  leftTag.innerHTML = "<img class='deleteIcon' src='https://amrabdo74.github.io/images/download.png'/>";
   icons.appendChild(leftTag);
 
   leftTag.onclick = function () {
