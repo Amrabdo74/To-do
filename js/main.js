@@ -60,6 +60,11 @@ function btnaddClick() {
 }
 
 btnAdd.addEventListener("click", btnaddClick);
+btnText.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+    btnaddClick()    
+  }
+})
 
 // Load existing to-do items from local storage on page load
 todos.forEach((todoItem) => {
