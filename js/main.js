@@ -124,7 +124,7 @@ el[0].addEventListener("click",
     localStorage.setItem("page", this.getAttribute("dete_color"))
     let deleteIcon = document.querySelectorAll(".deleteIcon")
     deleteIcon.forEach(function(item) {
-      item.src="../images/download.png"
+      item.src="https://raw.githubusercontent.com/Amrabdo74/To-do/main/images/download.png"
     })
   
 
@@ -142,7 +142,7 @@ el[1].addEventListener("click",
 
     let deleteIcon = document.querySelectorAll(".deleteIcon")
     deleteIcon.forEach(function(item) {
-      item.src="../images/download2.png"
+      item.src="https://raw.githubusercontent.com/Amrabdo74/To-do/main/images/download2.png"
     })
   
   }, false
