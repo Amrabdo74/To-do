@@ -30,7 +30,7 @@ function btnaddClick() {
     var leftTag = document.createElement("div");
     leftTag.classList.add("left");
     leftTag.innerHTML =
-      "<img class='deleteIcon' src='https://raw.githubusercontent.com/Amrabdo74/To-do/main/images/download.png'/>";
+      "<img class='deleteIcon' src='https://raw.githubusercontent.com/Amrabdo74/To-do/main/images/red-icon.png'/>";
     icons.appendChild(leftTag);
 
     leftTag.onclick = function () {
@@ -82,7 +82,7 @@ todos.forEach((todoItem) => {
 
   var leftTag = document.createElement("div");
   leftTag.classList.add("left");
-  leftTag.innerHTML = "<img class='deleteIcon' src='https://raw.githubusercontent.com/Amrabdo74/To-do/main/images/download.png'/>";
+  leftTag.innerHTML = "<img class='deleteIcon' src='https://raw.githubusercontent.com/Amrabdo74/To-do/main/images/red-icon.png'/>";
   icons.appendChild(leftTag);
 
   leftTag.onclick = function () {
@@ -122,12 +122,6 @@ el[0].addEventListener("click",
     document.body.classList.remove("light");
     document.body.classList.add(this.getAttribute("dete_color"));
     localStorage.setItem("page", this.getAttribute("dete_color"))
-    let deleteIcon = document.querySelectorAll(".deleteIcon")
-    deleteIcon.forEach(function(item) {
-      item.src="https://raw.githubusercontent.com/Amrabdo74/To-do/main/images/download.png"
-    })
-  
-
   }, false
 )
 
@@ -139,11 +133,6 @@ el[1].addEventListener("click",
     document.body.classList.add(this.getAttribute("dete_color"));
     el[1].classList.add("thenightbuton");
     localStorage.setItem("page", this.getAttribute("dete_color"))
-
-    let deleteIcon = document.querySelectorAll(".deleteIcon")
-    deleteIcon.forEach(function(item) {
-      item.src="https://raw.githubusercontent.com/Amrabdo74/To-do/main/images/download2.png"
-    })
   
   }, false
 )
