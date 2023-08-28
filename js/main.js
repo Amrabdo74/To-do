@@ -30,7 +30,7 @@ function btnaddClick() {
     var leftTag = document.createElement("div");
     leftTag.classList.add("left");
     leftTag.innerHTML =
-      "<img class='deleteIcon' src='https://raw.githubusercontent.com/Amrabdo74/To-do/main/images/download.png'/>";
+      "<img class='deleteIcon' src='../images/download.png'/>";
     icons.appendChild(leftTag);
 
     leftTag.onclick = function () {
@@ -56,6 +56,7 @@ function btnaddClick() {
       updateLocalStorage();
     };
   }
+  btnText.value = ""
 }
 
 btnAdd.addEventListener("click", btnaddClick);
@@ -81,7 +82,7 @@ todos.forEach((todoItem) => {
 
   var leftTag = document.createElement("div");
   leftTag.classList.add("left");
-  leftTag.innerHTML = "<img class='deleteIcon' src='https://raw.githubusercontent.com/Amrabdo74/To-do/main/images/download.png'/>";
+  leftTag.innerHTML = "<img class='deleteIcon' src='../images/download.png'/>";
   icons.appendChild(leftTag);
 
   leftTag.onclick = function () {
@@ -110,7 +111,6 @@ el[1].classList.add("thenightbuton");
 
 if (document.body.className === "light") {
   el[1].style.display = "none";
-
 }
 if (document.body.className === "dark") {
   el[0].style.display = "none"
@@ -122,6 +122,11 @@ el[0].addEventListener("click",
     document.body.classList.remove("light");
     document.body.classList.add(this.getAttribute("dete_color"));
     localStorage.setItem("page", this.getAttribute("dete_color"))
+    let deleteIcon = document.querySelectorAll(".deleteIcon")
+    deleteIcon.forEach(function(item) {
+      item.src="../images/download.png"
+    })
+  
 
   }, false
 )
@@ -135,6 +140,10 @@ el[1].addEventListener("click",
     el[1].classList.add("thenightbuton");
     localStorage.setItem("page", this.getAttribute("dete_color"))
 
-
+    let deleteIcon = document.querySelectorAll(".deleteIcon")
+    deleteIcon.forEach(function(item) {
+      item.src="../images/download2.png"
+    })
+  
   }, false
 )
